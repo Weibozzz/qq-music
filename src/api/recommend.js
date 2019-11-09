@@ -1,4 +1,5 @@
-import jsonp from '../common/js/jsonp'
+import jsonp from 'common/js/jsonp'
+import {commonParams, options} from './config'
 import axios from 'axios'
 
 export function getRecommend () {
@@ -8,21 +9,11 @@ export function getRecommend () {
     uin: 0,
     needNewCode: 1
   }
-  const options = {
-    param: 'jsonpCallback'
-  }
   return jsonp(url, data, options);
 }
 
 export function getDiscList() {
   const url = '/api/getDiscList'
-  const commonParams = {
-    g_tk: 1928093487,
-    inCharset: 'utf-8',
-    outCharset: 'utf-8',
-    notice: 0,
-    format: 'jsonp'
-  }
 
   const data = {
     ...commonParams,

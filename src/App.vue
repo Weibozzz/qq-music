@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import MHeader from './components/MHeader/MHeader'
-import Tab from './components/tab/tab'
+import MHeader from '@/components/MHeader/MHeader'
+import Tab from '@/base/tab/tab'
 export default {
   name: 'app',
   components: {

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import router from './router'
 import App from './App.vue'
-import 'swiper/css/swiper.min.css';
+import 'swiper/dist/css/swiper.min.css';
 
 Vue.config.productionTip = false
 
