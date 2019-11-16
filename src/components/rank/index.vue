@@ -1,24 +1,29 @@
 <template>
-  <div class="toplist">
-    <ul>
-      <li @click="selectItem(item)"
-          class="item"
-          :key="item.id"
-          v-for="item in topList">
-        <div class="icon">
-          <img width="100" height="100" :src="item.picUrl"/>
-        </div>
-        <ul class="songlist">
-          <li class="song"
-              v-for="(song,index) in item.songList"
-              :key="song.songname"
-          >
-            <span>{{index + 1}}</span>
-            <span>{{song.songname}}-{{song.singername}}</span>
-          </li>
-        </ul>
-      </li>
-    </ul>
+  <div class="">
+
+    <div class="toplist">
+      <ul>
+        <li @click="selectItem(item)"
+            class="item"
+            :key="item.id"
+            v-for="item in topList">
+          <div class="icon">
+            <img width="100" height="100" :src="item.picUrl"/>
+          </div>
+          <ul class="songlist">
+            <li class="song"
+                v-for="(song,index) in item.songList"
+                :key="song.songname"
+            >
+              <span>{{index + 1}}</span>
+              <span>{{song.songname}}-{{song.singername}}</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <router-view></router-view>
+
+    </div>
   </div>
 </template>
 
