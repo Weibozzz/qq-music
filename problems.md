@@ -32,4 +32,8 @@ chainWebpack (config) {
 ## axios全局配置
 ## 推荐上部分固定
 ## 左右滑动数据缓存
-## 标题档直播
+## 搜索字体图标
+## 搜索 onQueryChange
+## 子路由跳转
+## transition name所有值
+## user 浏览器默认li的样式
